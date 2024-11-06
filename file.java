@@ -6,13 +6,13 @@ public class Solution {
 
         for (int num : nums) {
             if (list.contains(num)) {
-                return true; // Найден дубликат
+                return true; 
             } else {
                 list.add(num);
             }
         }
 
-        return false; // Все элементы уникальны
+        return false;
     }
 
     public static void main(String[] args) {
@@ -20,6 +20,6 @@ public class Solution {
         int[] nums = {1, 2, 3, 1};
         boolean result = solution.containsDuplicate(nums);
 
-        System.out.println(result); // Ожидаемый вывод: true
+        System.out.println(result);
     }
 }
